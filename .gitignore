@@ -49,10 +49,11 @@ mlartifacts/
 *.db
 mlflow.db
 
-# DVC data cache and tracked files
-/data/*.csv
-/data/raw/
-/data/processed/
+# DVC tracked files (raw data files should not be committed to Git, but .dvc files are committed)
+data/**/*.csv
+data/**/*.parquet
+data/**/*.json
+!data/**/*.dvc
 .dvc/cache/
 .dvc/tmp/
 
