@@ -4,7 +4,6 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-import os
 from typing import Set
 from pydantic import Field
 from pydantic_settings import BaseSettings

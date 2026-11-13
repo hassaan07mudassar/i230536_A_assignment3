@@ -5,7 +5,6 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 from unittest.mock import patch
-import pytest
 
 from agent.schemas import (
     MlflowBestRunInput,
@@ -98,8 +97,6 @@ def test_mlflow_connection_failure_handled():
         assert res.error.code == "MLFLOW_UNAVAILABLE"
 
 def test_mlflow_compare_experiments():
-    from agent.schemas import MlflowCompareExperimentsInput
-    from agent.tools.mlflow_tools import mlflow_compare_experiments
     res = mlflow_compare_experiments(MlflowCompareExperimentsInput(experiment_names=["customer_churn_prediction"]))
     assert res.ok is True
     assert len(res.data["experiments"]) >= 1

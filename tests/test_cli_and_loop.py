@@ -6,7 +6,6 @@ Student: Hassaan Mudassar (i230536, CS-A)
 
 import sys
 from unittest.mock import patch
-import pytest
 
 from agent.llm_client import MockLLMClient
 from agent.main import run_cli

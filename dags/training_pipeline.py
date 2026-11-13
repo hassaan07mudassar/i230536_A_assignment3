@@ -10,7 +10,6 @@ validate_dataset >> preprocess_data >> train_model >> evaluate_and_log_mlflow >>
 from datetime import datetime, timedelta
 import logging
 import os
-import sys
 from typing import Any, Dict
 
 # Standard Airflow task decorators
@@ -252,7 +251,6 @@ def ml_training_pipeline():
         import mlflow
         client = mlflow.tracking.MlflowClient()
         reg_name = "customer_churn_classifier"
-        model_uri = f"runs:/{eval_info['run_id']}/model"
         try:
             reg_version = client.create_model_version(
                 name=reg_name,

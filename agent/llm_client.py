@@ -6,11 +6,10 @@ Student: Hassaan Mudassar (i230536, CS-A)
 
 import json
 import os
-import time
 from typing import Any, Dict, List, Optional
 
 from agent.config import settings
-from agent.logging_config import logger, redact_secrets
+from agent.logging_config import logger
 
 
 class BaseLLMClient:

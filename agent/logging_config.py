@@ -5,11 +5,10 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 import contextvars
-import json
 import logging
 import re
 import sys
-from typing import Any, Dict, Union
+from typing import Any, Dict
 
 from pythonjsonlogger import jsonlogger
 

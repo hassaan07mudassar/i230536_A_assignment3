@@ -9,7 +9,7 @@ import json
 import os
 import subprocess
 import time
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, Optional
 
 import joblib
 import matplotlib.pyplot as plt

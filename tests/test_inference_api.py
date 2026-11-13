@@ -4,10 +4,8 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-import pytest
-from fastapi.testclient import TestClient
 
-from api.main import app, load_model
+from api.main import load_model
 
 
 def test_inference_health(inference_client):

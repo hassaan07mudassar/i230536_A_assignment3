@@ -5,12 +5,10 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 import os
-import sys
 import time
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict
 
 import joblib
-import numpy as np
 import pandas as pd
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel, Field

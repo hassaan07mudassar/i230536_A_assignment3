@@ -269,3 +269,4 @@ To demonstrate robust observability and diagnostic reasoning, three deliberate f
 3. **Automated Drift Detection with Evidently AI:**
    - *Limitation:* Retraining policy currently checks model age and validation thresholds.
    - *Improvement:* Integrate Evidently AI / Great Expectations into `api/main.py` to stream KS-test drift metrics directly to the agent.
+

@@ -4,7 +4,7 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-from typing import Optional, Tuple
+from typing import Optional
 from agent.config import settings
 from agent.logging_config import logger
 from agent.schemas import ToolError

@@ -4,14 +4,11 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-import os
 import time
-from typing import Any, Dict, List, Optional, Tuple
-import mlflow
+from typing import Optional, Tuple
 from mlflow.tracking import MlflowClient
 
 from agent.config import settings
-from agent.logging_config import logger
 from agent.schemas import (
     MlflowBestRunInput,
     MlflowCompareExperimentsInput,

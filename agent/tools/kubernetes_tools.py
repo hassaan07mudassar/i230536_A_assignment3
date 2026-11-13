@@ -5,15 +5,15 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 from datetime import datetime
-import json
+import os
 import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Optional, Tuple
 
 from kubernetes import client, config
 from kubernetes.client.rest import ApiException
 
 from agent.config import settings
-from agent.logging_config import logger, redact_secrets
+from agent.logging_config import redact_secrets
 from agent.permissions import validate_k8s_mutation
 from agent.schemas import (
     K8sDiagnoseServiceInput,
@@ -393,7 +393,6 @@ def k8s_get_deployed_version(input_data: K8sGetDeployedVersionInput) -> ToolResu
         containers = dep.spec.template.spec.containers
         image = containers[0].image if containers else "none"
         labels = dep.metadata.labels or {}
-        annotations = dep.metadata.annotations or {}
 
         # Parse image tag
         image_tag = image.split(":")[-1] if ":" in image else "latest"

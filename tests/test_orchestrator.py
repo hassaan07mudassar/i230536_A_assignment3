@@ -4,8 +4,7 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-from unittest.mock import MagicMock, patch
-import pytest
+from unittest.mock import patch
 
 from agent.orchestrator import Orchestrator
 from agent.schemas import ChatRequest

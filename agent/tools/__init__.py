@@ -4,8 +4,7 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-from typing import Any, Callable, Dict
-from pydantic import BaseModel
+from typing import Any, Dict
 
 # DVC Tools
 from agent.tools.dvc_tools import (

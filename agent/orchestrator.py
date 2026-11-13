@@ -10,7 +10,6 @@ import time
 import uuid
 from typing import Any, Dict, List, Optional, Tuple
 
-from agent.config import settings
 from agent.llm_client import BaseLLMClient, get_llm_client
 from agent.logging_config import logger, redact_secrets, request_id_var
 from agent.schemas import ChatRequest, ChatResponse, ToolResult, ToolTraceItem

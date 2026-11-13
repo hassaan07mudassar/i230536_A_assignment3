@@ -5,7 +5,6 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 from unittest.mock import MagicMock, patch
-import pytest
 import requests
 
 from agent.schemas import (

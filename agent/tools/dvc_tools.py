@@ -8,7 +8,7 @@ import glob
 import os
 import subprocess
 import time
-from typing import Any, Dict, List, Optional, Tuple
+from typing import List, Tuple
 import yaml
 
 from agent.config import settings
@@ -50,7 +50,6 @@ def _execute_subprocess(cmd: List[str], timeout: int = 15, cwd: str = ".") -> Tu
 # ------------------------------------------------------------------------------
 def dvc_list_tracked_datasets(input_data: DvcListTrackedDatasetsInput) -> ToolResult:
     """Lists all datasets tracked by DVC in the repository."""
-    start_time = time.time()
     repo_path = input_data.repo_path
 
     if not os.path.exists(os.path.join(repo_path, ".dvc")):
@@ -262,7 +261,6 @@ def dvc_explain_reproduce(input_data: DvcExplainReproduceInput) -> ToolResult:
 # ------------------------------------------------------------------------------
 def dvc_get_dataset_for_experiment(input_data: DvcGetDatasetForExperimentInput) -> ToolResult:
     """Retrieves authentic DVC dataset provenance recorded in MLflow run tags."""
-    import mlflow
     from mlflow.tracking import MlflowClient
 
     tracking_uri = settings.mlflow_tracking_uri

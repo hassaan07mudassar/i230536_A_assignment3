@@ -4,7 +4,6 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-import pytest
 
 
 def test_agent_health(agent_client):

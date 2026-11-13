@@ -5,12 +5,9 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 import argparse
-import json
-import sys
 from typing import Optional
 import uvicorn
 from fastapi import FastAPI, status
-from pydantic import BaseModel
 
 from agent.orchestrator import Orchestrator
 from agent.schemas import ChatRequest, ChatResponse

@@ -223,3 +223,4 @@ bash scripts/restore_dvc.sh
 - `REPORT.md`: Comprehensive evaluation report with evidence tables and screenshot checklist.
 - `DEMO.md`: Runbook covering the 5 live demonstration scenarios.
 - `screenshots/`: 8 real captured command outputs and evidence logs.
+

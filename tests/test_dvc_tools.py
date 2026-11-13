@@ -4,9 +4,6 @@ Course: MLOps & Production AI Engineering (Fall 2026)
 Student: Hassaan Mudassar (i230536, CS-A)
 """
 
-import os
-from unittest.mock import patch
-import pytest
 
 from agent.schemas import (
     DvcCompareVersionsInput,

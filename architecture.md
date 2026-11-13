@@ -195,3 +195,4 @@ If none of these conditions are met, the agent returns "NO EVIDENCE RETRAINING I
 
 ### Q5: How does the system handle secret redaction in logs and tool traces?
 **Answer:** In `agent/logging_config.py`, we implemented a custom `RedactingJsonFormatter` and recursive `redact_secrets()` filter. Any dictionary key matching sensitive names (`password`, `token`, `secret`, `api_key`, `authorization`) or string matching regex patterns (Bearer tokens, Google/Gemini `AQ.*` keys, OpenAI `sk-*` keys) is masked with `[REDACTED_SECRET]` before output to logs or tool traces.
+

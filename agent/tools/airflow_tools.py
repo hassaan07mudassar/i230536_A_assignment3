@@ -5,13 +5,12 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 from datetime import datetime
-import json
 import time
-from typing import Any, Dict, List, Optional
+from typing import Dict, Optional
 import requests
 
 from agent.config import settings
-from agent.logging_config import logger, redact_secrets
+from agent.logging_config import redact_secrets
 from agent.permissions import validate_airflow_trigger
 from agent.schemas import (
     AirflowGetDagRunsInput,

@@ -7,7 +7,6 @@ Student: Hassaan Mudassar (i230536, CS-A)
 
 import json
 import os
-import subprocess
 import sys
 
 sys.path.insert(0, os.path.abspath("."))
@@ -67,10 +66,6 @@ def main():
             f.write(f"[{t.status}] {t.tool} ({t.duration_ms}ms) -> args: {t.args}\n")
 
     # 4. Agent Safety Enforcement (Unconfirmed Mutating Action)
-    req_safety = ChatRequest(
-        message="Restart the deployment churn-inference-deployment in namespace mlops-agent",
-        confirm=False,
-    )
     # Execute direct mutating tool check to showcase rejection
     from agent.tools.kubernetes_tools import k8s_restart_deployment
     from agent.schemas import K8sRestartDeploymentInput

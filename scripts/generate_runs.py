@@ -11,7 +11,6 @@ Demonstrates:
 import os
 import subprocess
 import sys
-import time
 
 # Ensure root directory is on PYTHONPATH
 sys.path.insert(0, os.path.abspath("."))
