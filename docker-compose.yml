@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # ----------------------------------------------------------------------------
+  # MLflow Tracking Server
+  # ----------------------------------------------------------------------------
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.11.0
+    container_name: mlops-mlflow-server
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - MLFLOW_TRACKING_URI=sqlite:///mlflow.db
+      - BACKEND_STORE_URI=sqlite:///mlflow.db
+      - DEFAULT_ARTIFACT_ROOT=/mlflow/artifacts
+    volumes:
+      - ./mlruns:/mlflow/mlruns
+      - ./mlartifacts:/mlflow/artifacts
+      - ./mlflow.db:/mlflow/mlflow.db
+    command: >
+      mlflow server
+      --backend-store-uri sqlite:///mlflow/mlflow.db
+      --default-artifact-root /mlflow/artifacts
+      --host 0.0.0.0
+      --port 5000
+
+  # ----------------------------------------------------------------------------
+  # Apache Airflow 3 Standalone / Dev Server
+  # ----------------------------------------------------------------------------
+  airflow:
+    image: apache/airflow:3.0.0a1-python3.12
+    container_name: mlops-airflow-server
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=False
+      - AIRFLOW__API__AUTH_BACKENDS=airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+      - ./models:/opt/airflow/models
+      - ./training:/opt/airflow/training
+      - ./params.yaml:/opt/airflow/params.yaml
+    command: standalone
+
+  # ----------------------------------------------------------------------------
+  # Local Agent API Server
+  # ----------------------------------------------------------------------------
+  agent-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mlops-agent-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=/app/models/model.joblib
+      - APP_VERSION=1.0.0
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./models:/app/models
+

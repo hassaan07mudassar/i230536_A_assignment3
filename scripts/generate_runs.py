@@ -39,7 +39,7 @@ def main():
 
     run_cmd(["dvc", "add", data_path])
     run_cmd(["dvc", "push"])
-    run_cmd(["git", "add", f"{data_path}.dvc", "data/raw/.gitignore", ".dvc/config"])
+    run_cmd(["git", "add", f"{data_path}.dvc"])
     try:
         run_cmd(["git", "commit", "-m", "feat(data): add customer churn dataset v1.0"])
     except subprocess.CalledProcessError:

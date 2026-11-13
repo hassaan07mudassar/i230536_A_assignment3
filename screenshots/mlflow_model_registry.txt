@@ -1,0 +1,54 @@
+=== MLFLOW MODEL REGISTRY EVIDENCE (ALIASES: PRODUCTION & CANDIDATE) ===
+{
+  "ok": true,
+  "data": {
+    "model_name": "customer_churn_classifier",
+    "description": null,
+    "aliases": {
+      "candidate": 3,
+      "production": 1
+    },
+    "versions": [
+      {
+        "version": 3,
+        "current_stage": "None",
+        "aliases": [],
+        "run_id": "d4f04f4431914224b7d6f496ecc2b1ff",
+        "description": "Customer churn model. Val Acc: 0.8907, F1: 0.3279",
+        "tags": {
+          "dvc_version": "v2.0"
+        },
+        "status": "READY"
+      },
+      {
+        "version": 2,
+        "current_stage": "None",
+        "aliases": [],
+        "run_id": "0c138883e1044bf1815dd1316fa02d11",
+        "description": "Customer churn model. Val Acc: 0.8933, F1: 0.4118",
+        "tags": {
+          "dvc_version": "v2.0"
+        },
+        "status": "READY"
+      },
+      {
+        "version": 1,
+        "current_stage": "None",
+        "aliases": [],
+        "run_id": "6a8834dad1784649a5a544782003b7f3",
+        "description": "Customer churn model. Val Acc: 0.8960, F1: 0.4179",
+        "tags": {
+          "dvc_version": "v2.0"
+        },
+        "status": "READY"
+      }
+    ],
+    "total_versions": 3
+  },
+  "error": null,
+  "evidence": {
+    "source": "MlflowClient (Model Registry: customer_churn_classifier)",
+    "timestamp": "2026-11-13T17:06:49Z",
+    "raw_output": "Registry 'customer_churn_classifier': 3 versions. Aliases: {'candidate': 3, 'production': 1}"
+  }
+}

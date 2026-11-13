@@ -1,0 +1,19 @@
+=== DVC VERSION COMPARISON (v1.0 vs v2.0) ===
+{
+  "ok": true,
+  "data": {
+    "revision_base": "v1.0",
+    "revision_target": "v2.0",
+    "dataset": "data/raw/customer_churn.csv",
+    "hash_rev1": "6aaaf4f28e0c5f7303f8b89cb97012e8",
+    "hash_rev2": "7f176fd7c4a5d1f9c9516ee03ed95519",
+    "data_changed": true,
+    "diff_summary": "diff --git a/data/raw/customer_churn.csv.dvc b/data/raw/customer_churn.csv.dvc\nindex 4d1b61b..83072f4 100644\n--- a/data/raw/customer_churn.csv.dvc\n+++ b/data/raw/customer_churn.csv.dvc\n@@ -1,5 +1,5 @@\n outs:\n-- md5: 6aaaf4f28e0c5f7303f8b89cb97012e8\n-  size: 38685\n+- md5: 7f176fd7c4a5d1f9c9516ee03ed95519\n+  size: 58106\n   hash: md5\n   path: customer_churn.csv\n"
+  },
+  "error": null,
+  "evidence": {
+    "source": "git diff -- *.dvc",
+    "timestamp": "2026-11-13T17:06:48Z",
+    "raw_output": "diff --git a/data/raw/customer_churn.csv.dvc b/data/raw/customer_churn.csv.dvc\nindex 4d1b61b..83072f4 100644\n--- a/data/raw/customer_churn.csv.dvc\n+++ b/data/raw/customer_churn.csv.dvc\n@@ -1,5 +1,5 @@\n outs:\n-- md5: 6aaaf4f28e0c5f7303f8b89cb97012e8\n-  size: 38685\n+- md5: 7f176fd7c4a5d1f9c9516ee03ed9"
+  }
+}

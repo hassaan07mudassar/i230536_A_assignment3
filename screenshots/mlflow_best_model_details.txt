@@ -1,0 +1,47 @@
+=== MLFLOW BEST RUN INTELLIGENCE & DEFENSIVE AUDIT ===
+{
+  "ok": true,
+  "data": {
+    "best_run_id": "6a8834dad1784649a5a544782003b7f3",
+    "run_name": "GradientBoostingClassifier_v2.0_trees150_depth6",
+    "status": "FINISHED",
+    "metric_name": "f1_score",
+    "metric_value": 0.4179,
+    "all_metrics": {
+      "accuracy": 0.896,
+      "precision": 0.6087,
+      "recall": 0.3182,
+      "f1_score": 0.4179,
+      "train_accuracy": 1.0,
+      "train_f1": 1.0,
+      "train_val_f1_gap": 0.5821,
+      "training_time_seconds": 1.3876
+    },
+    "params": {
+      "model_type": "GradientBoostingClassifier",
+      "n_estimators": "150",
+      "max_depth": "6",
+      "learning_rate": "0.12",
+      "dataset_rows": "1500",
+      "features_count": "7"
+    },
+    "provenance": {
+      "dvc_dataset_version": "v2.0",
+      "dvc_data_hash": "7f176fd7c4a5d1f9c9516ee03ed95519",
+      "git_commit": "2fae37a30567c6d1917f636276a2d129a02a28eb"
+    },
+    "defensive_audit": {
+      "overfitting_gap": 0.5821,
+      "is_overfitted": true,
+      "run_status": "FINISHED",
+      "is_production_ready": false,
+      "reasoning": "Selected run 'GradientBoostingClassifier_v2.0_trees150_depth6' with f1_score=0.4179. Dataset version: v2.0. Overfitting gap (train - val): 0.5821. Quality gate status: FAILED/UNCONFIRMED."
+    }
+  },
+  "error": null,
+  "evidence": {
+    "source": "MLflow search_runs (ordered by metrics.f1_score DESC)",
+    "timestamp": "2026-11-13T17:06:49Z",
+    "raw_output": "Best run: GradientBoostingClassifier_v2.0_trees150_depth6 | f1_score: 0.4179 | DVC: v2.0"
+  }
+}

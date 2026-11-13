@@ -1,0 +1,19 @@
+=== AGENT MUTATING SAFETY REJECTION EVIDENCE ===
+{
+  "ok": false,
+  "data": null,
+  "error": {
+    "code": "CONFIRMATION_REQUIRED",
+    "message": "Cluster mutation 'restart' in namespace 'mlops-agent' requires explicit user confirmation. Please resubmit the request with confirm=true.",
+    "details": {
+      "action": "restart",
+      "namespace": "mlops-agent",
+      "confirmed": false
+    }
+  },
+  "evidence": {
+    "source": "security_policy_enforcer",
+    "timestamp": "2026-11-13T17:06:58Z",
+    "raw_output": null
+  }
+}

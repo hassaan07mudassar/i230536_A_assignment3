@@ -1,0 +1,420 @@
+=== MLFLOW RUNS TABLE (>= 10 RUNS) ===
+{
+  "ok": true,
+  "data": {
+    "runs": [
+      {
+        "run_id": "6a8834dad1784649a5a544782003b7f3",
+        "run_name": "GradientBoostingClassifier_v2.0_trees150_depth6",
+        "status": "FINISHED",
+        "start_time": 1794570531026,
+        "metrics": {
+          "accuracy": 0.896,
+          "precision": 0.6087,
+          "recall": 0.3182,
+          "f1_score": 0.4179,
+          "train_accuracy": 1.0,
+          "train_f1": 1.0,
+          "train_val_f1_gap": 0.5821,
+          "training_time_seconds": 1.3876
+        },
+        "params": {
+          "model_type": "GradientBoostingClassifier",
+          "n_estimators": "150",
+          "max_depth": "6",
+          "learning_rate": "0.12",
+          "dataset_rows": "1500",
+          "features_count": "7"
+        },
+        "dataset_version": "v2.0",
+        "git_commit": "2fae37a3",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "0c138883e1044bf1815dd1316fa02d11",
+        "run_name": "GradientBoostingClassifier_v2.0_trees120_depth5",
+        "status": "FINISHED",
+        "start_time": 1794570525376,
+        "metrics": {
+          "accuracy": 0.8933,
+          "precision": 0.5833,
+          "recall": 0.3182,
+          "f1_score": 0.4118,
+          "train_accuracy": 0.9867,
+          "train_f1": 0.9402,
+          "train_val_f1_gap": 0.5285,
+          "training_time_seconds": 0.5092
+        },
+        "params": {
+          "model_type": "GradientBoostingClassifier",
+          "n_estimators": "120",
+          "max_depth": "5",
+          "learning_rate": "0.08",
+          "dataset_rows": "1500",
+          "features_count": "7"
+        },
+        "dataset_version": "v2.0",
+        "git_commit": "2fae37a3",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "d4f04f4431914224b7d6f496ecc2b1ff",
+        "run_name": "RandomForestClassifier_v2.0_trees300_depth25",
+        "status": "FINISHED",
+        "start_time": 1794570538763,
+        "metrics": {
+          "accuracy": 0.8907,
+          "precision": 0.5882,
+          "recall": 0.2273,
+          "f1_score": 0.3279,
+          "train_accuracy": 1.0,
+          "train_f1": 1.0,
+          "train_val_f1_gap": 0.6721,
+          "training_time_seconds": 0.6972
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "300",
+          "max_depth": "25",
+          "learning_rate": "0.1",
+          "dataset_rows": "1500",
+          "features_count": "7"
+        },
+        "dataset_version": "v2.0",
+        "git_commit": "2fae37a3",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "d705a9bf3ca443a9910fe398dda00393",
+        "run_name": "RandomForestClassifier_v2.0_trees200_depth12",
+        "status": "FINISHED",
+        "start_time": 1794570515928,
+        "metrics": {
+          "accuracy": 0.88,
+          "precision": 0.4737,
+          "recall": 0.2045,
+          "f1_score": 0.2857,
+          "train_accuracy": 0.9956,
+          "train_f1": 0.9808,
+          "train_val_f1_gap": 0.6951,
+          "training_time_seconds": 0.4223
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "200",
+          "max_depth": "12",
+          "learning_rate": "0.1",
+          "dataset_rows": "1500",
+          "features_count": "7"
+        },
+        "dataset_version": "v2.0",
+        "git_commit": "2fae37a3",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "8c58c708d4c048b18bcf4727cee73ac0",
+        "run_name": "RandomForestClassifier_v2.0_trees100_depth8",
+        "status": "FINISHED",
+        "start_time": 1794570507395,
+        "metrics": {
+          "accuracy": 0.8853,
+          "precision": 0.5333,
+          "recall": 0.1818,
+          "f1_score": 0.2712,
+          "train_accuracy": 0.9289,
+          "train_f1": 0.5699,
+          "train_val_f1_gap": 0.2987,
+          "training_time_seconds": 0.7594
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "100",
+          "max_depth": "8",
+          "learning_rate": "0.1",
+          "dataset_rows": "1500",
+          "features_count": "7"
+        },
+        "dataset_version": "v2.0",
+        "git_commit": "2fae37a3",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "c0a3417b236144a5ae5dcae3cdc17513",
+        "run_name": "GradientBoostingClassifier_v1.0_trees80_depth4",
+        "status": "FINISHED",
+        "start_time": 1794570490910,
+        "metrics": {
+          "accuracy": 0.872,
+          "precision": 0.5,
+          "recall": 0.1562,
+          "f1_score": 0.2381,
+          "train_accuracy": 0.9253,
+          "train_f1": 0.5821,
+          "train_val_f1_gap": 0.344,
+          "training_time_seconds": 0.3243
+        },
+        "params": {
+          "model_type": "GradientBoostingClassifier",
+          "n_estimators": "80",
+          "max_depth": "4",
+          "learning_rate": "0.05",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "b35d1ed932b54a87b8156ce68bd97570",
+        "run_name": "RandomForestClassifier_v1.0_trees150_depth10",
+        "status": "FINISHED",
+        "start_time": 1794570485097,
+        "metrics": {
+          "accuracy": 0.872,
+          "precision": 0.5,
+          "recall": 0.1562,
+          "f1_score": 0.2381,
+          "train_accuracy": 0.9853,
+          "train_f1": 0.9385,
+          "train_val_f1_gap": 0.7005,
+          "training_time_seconds": 0.3548
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "150",
+          "max_depth": "10",
+          "learning_rate": "0.1",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "1348d692c56c409a86b6726a89571b52",
+        "run_name": "GradientBoostingClassifier_v1.0_trees80_depth4",
+        "status": "FINISHED",
+        "start_time": 1794570407720,
+        "metrics": {
+          "accuracy": 0.872,
+          "precision": 0.5,
+          "recall": 0.1562,
+          "f1_score": 0.2381,
+          "train_accuracy": 0.9253,
+          "train_f1": 0.5821,
+          "train_val_f1_gap": 0.344,
+          "training_time_seconds": 0.3192
+        },
+        "params": {
+          "model_type": "GradientBoostingClassifier",
+          "n_estimators": "80",
+          "max_depth": "4",
+          "learning_rate": "0.05",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "5592899a4b41451d9bf63577ecb1ea92",
+        "run_name": "RandomForestClassifier_v1.0_trees150_depth10",
+        "status": "FINISHED",
+        "start_time": 1794570400304,
+        "metrics": {
+          "accuracy": 0.872,
+          "precision": 0.5,
+          "recall": 0.1562,
+          "f1_score": 0.2381,
+          "train_accuracy": 0.9853,
+          "train_f1": 0.9385,
+          "train_val_f1_gap": 0.7005,
+          "training_time_seconds": 0.8876
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "150",
+          "max_depth": "10",
+          "learning_rate": "0.1",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "f7d19f572e1740918a6f3693e05cf019",
+        "run_name": "RandomForestClassifier_v1.0_trees100_depth8",
+        "status": "FINISHED",
+        "start_time": 1794570479603,
+        "metrics": {
+          "accuracy": 0.876,
+          "precision": 0.5714,
+          "recall": 0.125,
+          "f1_score": 0.2051,
+          "train_accuracy": 0.9453,
+          "train_f1": 0.7248,
+          "train_val_f1_gap": 0.5197,
+          "training_time_seconds": 0.2918
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "100",
+          "max_depth": "8",
+          "learning_rate": "0.1",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "f701909e00d743779583265148928d3a",
+        "run_name": "RandomForestClassifier_v1.0_trees100_depth8",
+        "status": "FINISHED",
+        "start_time": 1794570389749,
+        "metrics": {
+          "accuracy": 0.876,
+          "precision": 0.5714,
+          "recall": 0.125,
+          "f1_score": 0.2051,
+          "train_accuracy": 0.9453,
+          "train_f1": 0.7248,
+          "train_val_f1_gap": 0.5197,
+          "training_time_seconds": 0.8061
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "100",
+          "max_depth": "8",
+          "learning_rate": "0.1",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "c151b0bb00d94985969c74508ceed61c",
+        "run_name": "RandomForestClassifier_v1.0_trees50_depth5",
+        "status": "FINISHED",
+        "start_time": 1794570472746,
+        "metrics": {
+          "accuracy": 0.872,
+          "precision": 0.5,
+          "recall": 0.0625,
+          "f1_score": 0.1111,
+          "train_accuracy": 0.8867,
+          "train_f1": 0.2056,
+          "train_val_f1_gap": 0.0945,
+          "training_time_seconds": 1.4953
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "50",
+          "max_depth": "5",
+          "learning_rate": "0.1",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "0f90b1ed59b04e4d88dcd15e0037aec5",
+        "run_name": "RandomForestClassifier_v1.0_trees50_depth5",
+        "status": "FINISHED",
+        "start_time": 1794570367355,
+        "metrics": {
+          "accuracy": 0.872,
+          "precision": 0.5,
+          "recall": 0.0625,
+          "f1_score": 0.1111,
+          "train_accuracy": 0.8867,
+          "train_f1": 0.2056,
+          "train_val_f1_gap": 0.0945,
+          "training_time_seconds": 1.8886
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "50",
+          "max_depth": "5",
+          "learning_rate": "0.1",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "False"
+      },
+      {
+        "run_id": "22e20a758fe7469e944497f71055be8c",
+        "run_name": "RandomForestClassifier_v1.0_trees50_depth5",
+        "status": "FAILED",
+        "start_time": 1794570332785,
+        "metrics": {
+          "accuracy": 0.872,
+          "precision": 0.5,
+          "recall": 0.0625,
+          "f1_score": 0.1111,
+          "train_accuracy": 0.8867,
+          "train_f1": 0.2056,
+          "train_val_f1_gap": 0.0945,
+          "training_time_seconds": 1.6908
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "50",
+          "max_depth": "5",
+          "learning_rate": "0.1",
+          "dataset_rows": "1000",
+          "features_count": "7"
+        },
+        "dataset_version": "v1.0",
+        "git_commit": "f9413a93",
+        "quality_passed": "unknown"
+      },
+      {
+        "run_id": "870822cc12854fef86c52acacd96d743",
+        "run_name": "RandomForestClassifier_v2.0_trees10_depth3",
+        "status": "FINISHED",
+        "start_time": 1794570544799,
+        "metrics": {
+          "accuracy": 0.8827,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "train_accuracy": 0.8818,
+          "train_f1": 0.0,
+          "train_val_f1_gap": 0.0,
+          "training_time_seconds": 0.1997
+        },
+        "params": {
+          "model_type": "RandomForestClassifier",
+          "n_estimators": "10",
+          "max_depth": "3",
+          "learning_rate": "0.1",
+          "dataset_rows": "1500",
+          "features_count": "7"
+        },
+        "dataset_version": "v2.0",
+        "git_commit": "2fae37a3",
+        "quality_passed": "False"
+      }
+    ],
+    "total": 15
+  },
+  "error": null,
+  "evidence": {
+    "source": "MLflow search_runs (exp=customer_churn_prediction)",
+    "timestamp": "2026-11-13T17:06:49Z",
+    "raw_output": "Matched 15 runs for experiment 'customer_churn_prediction'."
+  }
+}

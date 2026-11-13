@@ -236,6 +236,7 @@ def train_and_evaluate(
             artifact_path="model",
             signature=signature,
             input_example=input_example,
+            serialization_format="pickle",
         )
 
         # 6. Quality Gate Evaluation & Model Registry

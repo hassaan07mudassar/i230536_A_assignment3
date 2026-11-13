@@ -1,0 +1,19 @@
+=== DVC DATASET VERSION EVIDENCE ===
+{
+  "ok": true,
+  "data": {
+    "dataset_path": "data/raw/customer_churn.csv",
+    "dvc_file": "data/raw/customer_churn.csv.dvc",
+    "dvc_md5_hash": "7f176fd7c4a5d1f9c9516ee03ed95519",
+    "git_commit": "2fae37a30567c6d1917f636276a2d129a02a28eb",
+    "git_branch": "main",
+    "git_tag": "v2.0",
+    "local_file_exists": true
+  },
+  "error": null,
+  "evidence": {
+    "source": "dvc metadata + git rev-parse",
+    "timestamp": "2026-11-13T17:06:48Z",
+    "raw_output": "Hash: 7f176fd7c4a5d1f9c9516ee03ed95519 | Commit: 2fae37a3 | Tag: v2.0"
+  }
+}

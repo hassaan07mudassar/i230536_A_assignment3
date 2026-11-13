@@ -1,0 +1,15 @@
+stages:
+  train:
+    cmd: python training/train.py --data-path data/raw/customer_churn.csv --dataset-version v2.0
+    deps:
+      - data/raw/customer_churn.csv
+      - training/train.py
+    params:
+      - training.n_estimators
+      - training.max_depth
+      - quality_gate.min_f1_score
+    outs:
+      - models/model.joblib:
+          persist: true
+      - outputs/confusion_matrix.png:
+          persist: true
