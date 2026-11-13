@@ -1,0 +1,25 @@
+data:
+  dataset_name: customer_churn
+  raw_path: data/raw/customer_churn.csv
+  target_column: churn
+  test_size: 0.25
+  random_state: 42
+
+training:
+  n_estimators: 100
+  max_depth: 8
+  learning_rate: 0.1
+  criterion: gini
+  model_type: RandomForestClassifier
+
+quality_gate:
+  min_f1_score: 0.80
+  min_accuracy: 0.80
+  max_train_val_gap: 0.10
+  require_model_signature: true
+
+governance:
+  max_model_age_days: 30
+  registry_model_name: customer_churn_classifier
+  candidate_alias: candidate
+  production_alias: production
