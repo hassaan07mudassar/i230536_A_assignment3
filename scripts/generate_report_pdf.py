@@ -547,3 +547,4 @@ if __name__ == "__main__":
 
     pdf_target = os.path.join(repo_dir, "REPORT.pdf")
     build_pdf(pdf_target, repo_dir)
+
