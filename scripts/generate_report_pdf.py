@@ -340,48 +340,48 @@ def build_pdf(pdf_path: str, repo_dir: str):
 
     # Figure 1: DVC & Git
     add_screenshot(
-        "screenshots/terminal_01_dvc_git.png",
-        "Figure 1: Authentic PowerShell output displaying Git tags v1.0 and v2.0, commit history, and clean DVC status.",
-        img_width=6.5, img_height=2.8
+        "screenshots/Screenshot 2026-11-13 171639.png",
+        "Figure 1: Authentic PowerShell console showing Git tags v1.0 and v2.0, commit history, and clean DVC status (data/raw/customer_churn.csv.dvc).",
+        img_width=6.5, img_height=2.84
     )
 
     # Figure 2: MLflow Runs & Registry
     add_screenshot(
-        "screenshots/terminal_02_mlflow_runs.png",
+        "screenshots/Screenshot 2026-11-13 171727.png",
         "Figure 2: MLflow experiment runs summary table across v1.0/v2.0 datasets and Model Registry aliases ('production', 'candidate').",
-        img_width=6.5, img_height=3.8
+        img_width=5.3, img_height=4.52
     )
 
     story.append(PageBreak())
 
     # Figure 3: Pytest & Ruff
     add_screenshot(
-        "screenshots/terminal_03_pytest_coverage.png",
-        "Figure 3: Pytest test suite results (65 passed, 81% total code coverage) and clean Ruff linter verification.",
-        img_width=6.5, img_height=3.4
+        "screenshots/Screenshot 2026-11-13 171910.png",
+        "Figure 3: Pytest test suite results (65 passed, 81% total code coverage) and clean Ruff linter verification (All checks passed!).",
+        img_width=5.4, img_height=4.23
     )
 
     # Figure 4: Mandatory Multi-Tool Agent
     add_screenshot(
-        "screenshots/terminal_04_agent_mandatory.png",
-        "Figure 4: Mandatory multi-tool query execution separating Known Facts, Uncertainties, and Retraining Actions.",
-        img_width=6.5, img_height=3.4
+        "screenshots/Screenshot 2026-11-13 172036.png",
+        "Figure 4: MLOps AI Agent mandatory multi-tool reasoning execution with structured Known Facts, Uncertainties, and Retraining Actions.",
+        img_width=5.4, img_height=4.28
     )
 
     story.append(PageBreak())
 
-    # Figure 5: Safety Guardrails
+    # Figure 5: DVC Failure Injection & Restoration
     add_screenshot(
-        "screenshots/terminal_05_safety_guardrails.png",
-        "Figure 5: Security guardrails enforcement demonstrating rejection without confirm=True versus authorized dispatch with confirm=True.",
-        img_width=6.5, img_height=3.6
+        "screenshots/Screenshot 2026-11-13 172249.png",
+        "Figure 5: DVC data drift failure injection (corrupt outlier row appended) and bit-for-bit cache restoration via dvc checkout --force.",
+        img_width=6.5, img_height=2.45
     )
 
-    # Figure 6: DVC Failure Injection & Restoration
+    # Figure 6: MLflow Web UI
     add_screenshot(
-        "screenshots/terminal_06_dvc_failure_injection.png",
-        "Figure 6: Data drift injection detection via DVC followed by bit-for-bit cache restoration.",
-        img_width=6.5, img_height=3.0
+        "screenshots/Screenshot 2026-11-13 172529.png",
+        "Figure 6: Live MLflow Tracking Server UI (http://localhost:5000) showing customer_churn_prediction experiment and pre-populated runs.",
+        img_width=6.5, img_height=1.80
     )
 
     # =========================================================================
