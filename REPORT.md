@@ -113,7 +113,19 @@ All verifiable tool execution outputs have been programmatically captured direct
 - `screenshots/agent_safety_rejection_output.txt`: Rejection record of an unconfirmed mutating Kubernetes action.
 - `screenshots/failure_injection_dvc_drift.txt`: Data tampering detection via `dvc status`.
 
-### 3.2 Checklist for Manual UI Screenshots (To Capture from Running UIs)
+### 3.2 Automated High-Resolution Terminal Screenshots (Embedded in REPORT.pdf)
+The following authentic terminal execution screenshots were generated directly from live system commands and embedded into `REPORT.pdf`:
+
+| Filename | Description | Verified Evidence |
+| :--- | :--- | :--- |
+| `screenshots/terminal_01_dvc_git.png` | DVC & Git Version Provenance | Git tags `v1.0` and `v2.0`, commit history, and clean DVC status. |
+| `screenshots/terminal_02_mlflow_runs.png` | MLflow Experiment Runs & Registry | 17 runs table across datasets and registered aliases (`production`, `candidate`). |
+| `screenshots/terminal_03_pytest_coverage.png` | Pytest 81% Coverage & Ruff Lint | 65 passed unit/integration tests and zero Ruff lint errors. |
+| `screenshots/terminal_04_agent_mandatory.png` | Mandatory Multi-Tool Reasoning | Verbatim 3-part response: Known Facts, Uncertainties, and Retraining Actions. |
+| `screenshots/terminal_05_safety_guardrails.png` | Security Guardrails Enforcement | Rejection of unconfirmed mutation vs. authorization with `confirm=True`. |
+| `screenshots/terminal_06_dvc_failure_injection.png` | DVC Drift & Cache Restoration | Outlier injection detection and bit-for-bit cache recovery. |
+
+### 3.3 Checklist for Manual UI Screenshots (To Capture from Running UIs)
 To complete your physical report appendix, capture these specific screenshots from your browser/terminal:
 
 | Filename | Component | UI View / Command | What to Capture |
