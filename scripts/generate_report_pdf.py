@@ -9,7 +9,6 @@ Student: Hassaan Mudassar (i230536, CS-A)
 """
 
 import os
-import sys
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.units import inch
@@ -44,13 +43,13 @@ class NumberedCanvas(canvas.Canvas):
         self.saveState()
         self.setFont("Helvetica", 9)
         self.setFillColor(colors.HexColor("#718096"))
-        
+
         # Header rule and title
         self.setStrokeColor(colors.HexColor("#E2E8F0"))
         self.setLineWidth(0.5)
         self.line(54, 745, 558, 745)
         self.drawString(54, 750, "MLOps AI Agent — Technical Report | Hassaan Mudassar (i230536)")
-        
+
         # Footer rule and page info
         self.line(54, 45, 558, 45)
         page_text = f"Page {self._pageNumber} of {page_count}"

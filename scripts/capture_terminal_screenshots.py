@@ -154,7 +154,7 @@ def capture_all():
     # ==========================================================================
     cmd2 = "python scripts/show_mlflow_summary.py"
     p_ml = subprocess.run([sys.executable, "scripts/show_mlflow_summary.py"], cwd=cwd, capture_output=True, text=True)
-    lines2 = [l for l in p_ml.stdout.split("\n") if "INFO mlflow" not in l and l.strip()]
+    lines2 = [line_str for line_str in p_ml.stdout.split("\n") if "INFO mlflow" not in line_str and line_str.strip()]
 
     render_terminal_window(
         title="PowerShell - Hassaan Mudassar (i230536) - MLflow Experiment Runs & Registry",
@@ -210,7 +210,7 @@ def capture_all():
     evidence_path = os.path.join(screenshots_dir, "agent_mandatory_scenario_output.txt")
     if os.path.exists(evidence_path):
         with open(evidence_path, "r", encoding="utf-8") as f:
-            lines4 = [l.rstrip() for l in f.readlines()]
+            lines4 = [line_item.rstrip() for line_item in f.readlines()]
     else:
         lines4 = ["No evidence file found"]
 
